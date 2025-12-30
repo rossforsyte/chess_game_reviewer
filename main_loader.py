@@ -2,6 +2,7 @@ from database import SessionLocal
 from game_loader import GameLoader
 from pgn_parser import PGNParser
 from models import Game
+from config import settings
 from sqlalchemy.exc import IntegrityError
 
 def run_import(username, source="chess_com"):
@@ -59,8 +60,11 @@ def run_import(username, source="chess_com"):
     print(f"⏭️ Пропущено (дубликаты): {skip_count}")
 
 if __name__ == "__main__":
-    # Здесь можно менять никнейм
-    # Позже мы вынесем это в аргументы командной строки
-    TARGET_USER = "Hikaru" 
+    # Берем данные прямо из конфига
+    user = settings.TARGET_USERNAME
+    source = settings.TARGET_SOURCE
     
-    run_import(TARGET_USER, source="chess_com")
+    if user == "Твой_Никнейм":
+        print("⚠️  Внимание: Вы не поменяли никнейм в .env файле!")
+    
+    run_import(user, source=source)

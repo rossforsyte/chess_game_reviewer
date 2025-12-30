@@ -20,5 +20,10 @@ class Config:
     ARCHIVES_LIMIT = int(os.getenv("DEFAULT_ARCHIVES_LIMIT", 1))
     LICHESS_MAX_GAMES = int(os.getenv("DEFAULT_LICHESS_GAMES", 10))
 
+
+    # Игрок, которого анализируем
+    TARGET_USERNAME = os.getenv("TARGET_USERNAME", "Hikaru") # Если забыл в .env, будет Hikaru
+    TARGET_SOURCE = os.getenv("TARGET_SOURCE", "chess_com")
+
 # Создаем экземпляр конфига, чтобы импортировать его в другие файлы
 settings = Config()
