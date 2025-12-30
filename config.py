@@ -24,6 +24,7 @@ class Config:
     # Игрок, которого анализируем
     TARGET_USERNAME = os.getenv("TARGET_USERNAME", "Hikaru") # Если забыл в .env, будет Hikaru
     TARGET_SOURCE = os.getenv("TARGET_SOURCE", "chess_com")
+    STOCKFISH_PATH = os.getenv("STOCKFISH_PATH")
 
 # Создаем экземпляр конфига, чтобы импортировать его в другие файлы
 settings = Config()

@@ -1,0 +1,429 @@
+
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <title>Chess Analyzer Pro - Отчет</title>
+            <style>
+                body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f4f9; color: #333; padding: 20px; }
+                .container { max_width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+                h1 { text-align: center; color: #2c3e50; }
+                .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; }
+                .stat-card { background: #ecf0f1; padding: 15px; border-radius: 8px; text-align: center; }
+                .stat-value { font-size: 24px; font-weight: bold; color: #2980b9; }
+                .stat-label { font-size: 14px; color: #7f8c8d; }
+                
+                h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+                
+                table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+                th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+                th { background-color: #f8f9fa; color: #7f8c8d; font-weight: 600; }
+                
+                .move-brilliant { color: #27ae60; font-weight: bold; }
+                .move-blunder { color: #c0392b; font-weight: bold; }
+                
+                a.btn { display: inline-block; padding: 6px 12px; background: #3498db; color: white; text-decoration: none; border-radius: 4px; font-size: 14px; }
+                a.btn:hover { background: #2980b9; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>♟️ Отчет для rogerforsyte</h1>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">286</div>
+                        <div class="stat-label">Партий в базе</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">80 💎</div>
+                        <div class="stat-label">Бриллиантов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">1666 💀</div>
+                        <div class="stat-label">Зевков</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">43.6% / 61.7%</div>
+                        <div class="stat-label">Точность (Белые/Черные)</div>
+                    </div>
+                </div>
+
+                <h2>💎 Мои Лучшие Ходы (Brilliant)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Соперник</th>
+                            <th>Ход</th>
+                            <th>Нотация</th>
+                            <th>Ссылка</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                        <tr>
+                            <td>2025-12-30</td>
+                            <td>Monasik</td>
+                            <td>23</td>
+                            <td class="move-brilliant">Qa8#</td>
+                            <td><a href="https://www.chess.com/game/live/147360154086&move=44" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-28</td>
+                            <td>Themistocles88</td>
+                            <td>42</td>
+                            <td class="move-brilliant">Qg8#</td>
+                            <td><a href="https://www.chess.com/game/live/147302512516&move=82" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-26</td>
+                            <td>RAAVAN666</td>
+                            <td>16</td>
+                            <td class="move-brilliant">Bh7+</td>
+                            <td><a href="https://www.chess.com/game/live/147206915684&move=30" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-24</td>
+                            <td>Didykvl</td>
+                            <td>39</td>
+                            <td class="move-brilliant">Qe7#</td>
+                            <td><a href="https://www.chess.com/game/live/147113043020&move=76" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-24</td>
+                            <td>Didykvl</td>
+                            <td>38</td>
+                            <td class="move-brilliant">Qg7+</td>
+                            <td><a href="https://www.chess.com/game/live/147113043020&move=74" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-24</td>
+                            <td>darkness7766</td>
+                            <td>26</td>
+                            <td class="move-brilliant">Ng6</td>
+                            <td><a href="https://www.chess.com/game/live/147123940688&move=50" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-24</td>
+                            <td>AbdulrahmanAlotaibi761</td>
+                            <td>34</td>
+                            <td class="move-brilliant">Rh2#</td>
+                            <td><a href="https://www.chess.com/game/live/147122499720&move=67" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-24</td>
+                            <td>darkness7766</td>
+                            <td>33</td>
+                            <td class="move-brilliant">Ng6</td>
+                            <td><a href="https://www.chess.com/game/live/147123940688&move=64" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-23</td>
+                            <td>riris</td>
+                            <td>27</td>
+                            <td class="move-brilliant">Bh4#</td>
+                            <td><a href="https://www.chess.com/game/live/147083241402&move=53" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-23</td>
+                            <td>Benji3277</td>
+                            <td>34</td>
+                            <td class="move-brilliant">Rh7#</td>
+                            <td><a href="https://www.chess.com/game/live/147070491990&move=66" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-22</td>
+                            <td>rs300790</td>
+                            <td>31</td>
+                            <td class="move-brilliant">Qb4#</td>
+                            <td><a href="https://www.chess.com/game/live/147031371630&move=61" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-22</td>
+                            <td>Hippohappytt</td>
+                            <td>56</td>
+                            <td class="move-brilliant">Qc5+</td>
+                            <td><a href="https://www.chess.com/game/live/147027457902&move=110" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-22</td>
+                            <td>Wuafle1</td>
+                            <td>49</td>
+                            <td class="move-brilliant">Ne5</td>
+                            <td><a href="https://www.chess.com/game/live/147025044204&move=96" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-22</td>
+                            <td>Liimd</td>
+                            <td>43</td>
+                            <td class="move-brilliant">Rg5+</td>
+                            <td><a href="https://www.chess.com/game/live/147025898684&move=85" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-22</td>
+                            <td>rs300790</td>
+                            <td>29</td>
+                            <td class="move-brilliant">e1=Q+</td>
+                            <td><a href="https://www.chess.com/game/live/147031371630&move=57" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-20</td>
+                            <td>xkred27</td>
+                            <td>44</td>
+                            <td class="move-brilliant">Qf2#</td>
+                            <td><a href="https://www.chess.com/game/live/146969703156&move=87" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-18</td>
+                            <td>potterplant</td>
+                            <td>39</td>
+                            <td class="move-brilliant">Re7+</td>
+                            <td><a href="https://www.chess.com/game/live/146861478034&move=76" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-18</td>
+                            <td>potterplant</td>
+                            <td>44</td>
+                            <td class="move-brilliant">Rd8#</td>
+                            <td><a href="https://www.chess.com/game/live/146861478034&move=86" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-18</td>
+                            <td>potterplant</td>
+                            <td>35</td>
+                            <td class="move-brilliant">d5</td>
+                            <td><a href="https://www.chess.com/game/live/146861478034&move=68" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-18</td>
+                            <td>potterplant</td>
+                            <td>42</td>
+                            <td class="move-brilliant">Rd6+</td>
+                            <td><a href="https://www.chess.com/game/live/146861478034&move=82" target="_blank" class="btn">Смотреть</a></td>
+                        </tr>
+            
+                    </tbody>
+                </table>
+
+                <h2>💀 Последние Ошибки (Blunders)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Соперник</th>
+                            <th>Ход</th>
+                            <th>Нотация</th>
+                            <th>Потеря (CPL)</th>
+                            <th>Ссылка</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                        <tr>
+                            <td>2025-12-30</td>
+                            <td>Monasik</td>
+                            <td>11</td>
+                            <td class="move-blunder">Be3</td>
+                            <td>-3.9 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147360154086&move=20" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-30</td>
+                            <td>Monasik</td>
+                            <td>12</td>
+                            <td class="move-blunder">fxe3</td>
+                            <td>-3.8 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147360154086&move=22" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-30</td>
+                            <td>Monasik</td>
+                            <td>13</td>
+                            <td class="move-blunder">Qd2</td>
+                            <td>-3.5 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147360154086&move=24" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-30</td>
+                            <td>Monasik</td>
+                            <td>14</td>
+                            <td class="move-blunder">Rd1</td>
+                            <td>-3.8 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147360154086&move=26" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>23</td>
+                            <td class="move-blunder">fxe5+</td>
+                            <td>-5.0 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=44" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>24</td>
+                            <td class="move-blunder">Rf3</td>
+                            <td>-6.0 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=46" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>25</td>
+                            <td class="move-blunder">Kf1</td>
+                            <td>-6.3 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=48" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>26</td>
+                            <td class="move-blunder">Ke2</td>
+                            <td>-6.0 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=50" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>27</td>
+                            <td class="move-blunder">Bf2</td>
+                            <td>-6.5 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=52" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>28</td>
+                            <td class="move-blunder">Qg1</td>
+                            <td>-6.3 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=54" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>29</td>
+                            <td class="move-blunder">Rxg1</td>
+                            <td>-7.6 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=56" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>30</td>
+                            <td class="move-blunder">Nc5</td>
+                            <td>-5.8 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=58" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>31</td>
+                            <td class="move-blunder">Nxa6</td>
+                            <td>-6.5 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=60" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>PanTobek</td>
+                            <td>32</td>
+                            <td class="move-blunder">Bxa6</td>
+                            <td>-6.2 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147345442592&move=62" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>Devran2321</td>
+                            <td>38</td>
+                            <td class="move-blunder">Qxd4</td>
+                            <td>-4.2 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320655578&move=75" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>Devran2321</td>
+                            <td>39</td>
+                            <td class="move-blunder">Qxe5+</td>
+                            <td>-7.6 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320655578&move=77" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>Devran2321</td>
+                            <td>40</td>
+                            <td class="move-blunder">Rb8</td>
+                            <td>-7.6 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320655578&move=79" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>recatado</td>
+                            <td>10</td>
+                            <td class="move-blunder">Ne2</td>
+                            <td>-3.1 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320240660&move=18" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>recatado</td>
+                            <td>11</td>
+                            <td class="move-blunder">Nxd4</td>
+                            <td>-3.1 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320240660&move=20" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-12-29</td>
+                            <td>recatado</td>
+                            <td>13</td>
+                            <td class="move-blunder">Qxd3</td>
+                            <td>-3.9 пешки</td>
+                            <td><a href="https://www.chess.com/game/live/147320240660&move=24" target="_blank" class="btn" style="background:#e74c3c;">Разбор</a></td>
+                        </tr>
+            
+                    </tbody>
+                </table>
+                
+                <p style="text-align:center; margin-top:40px; color:#999; font-size:12px;">Сгенерировано Chess Analyzer Pro</p>
+            </div>
+        </body>
+        </html>
+        
